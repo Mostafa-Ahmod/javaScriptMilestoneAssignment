@@ -21,3 +21,23 @@ function woodCalculator(chair,table,bade) {
 let overall  = woodCalculator(10,5,30);
 console.log(overall +' Cubic tray');
 // End of Question No.2
+
+//Question No.3
+function brickCalculator(floorNo){
+    if (floorNo > 0){
+        firstTen = 15 * 10;
+        return firstTen;
+    }
+    else if (floorNo > 10){
+         secondTen = 12 * 10;
+          return secondTen;
+    }
+    else if(floorNo > 20){
+        leftFloor = 10 * (floorNo - 20);
+        return leftFloor;
+    }
+    
+    let floorTogeather = firstTen  + secondTen + leftFloor;
+    let brickNeed = floorTogeather *  1000;
+    }
+    //End of Question No.3
